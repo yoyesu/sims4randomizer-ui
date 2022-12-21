@@ -7,6 +7,10 @@
   min-height: 100vh;
 }
 
+.invisible{
+  display: none;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

@@ -1,18 +1,14 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
-import HttpPost from '../components/httpPost'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-  return (
-    <>
+export default function StarterHousehold() {
+    return (
+      <>
       <Head>
-        <title>Sims 4 Randomizer</title>
+        <title>Sims 4 Randomizer: Starter Household</title>
         <meta name="description" content="Randomizer tool for the simulation game The Sims 4" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -21,12 +17,8 @@ export default function Home() {
         <header>
           <Navbar/>
         </header>
-
-        <h1>Sims 4 Randomizer</h1>
-        <p>Choose a generator!</p>
-       
       </main>
       <Footer/>
-    </>
-  )
+      </>
+    )
 }

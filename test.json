@@ -1,0 +1,15 @@
+{
+    "difficulty": 2,
+    "lifespan": 2,
+    "starterSims": 0,
+    "aspiration": 1,
+    "gender": 0,
+    "age": -1,
+    "job": 0,
+    "jobLevel": 0,
+    "sexuality": 3,
+    "skills": null,
+    "children": 0,
+    "willMarry": false,
+    "married": false
+}
