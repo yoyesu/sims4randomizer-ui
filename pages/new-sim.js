@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
-import NewSimForm from '../components/newsim-form'
+import NewSimForm from '../components/new-sim/newsim-form'
 
 export default function NewSim() {
   

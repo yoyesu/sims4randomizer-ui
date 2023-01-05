@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import StarterHouseholdForm from '../components/starter-household/starterHousehold-form'
 
 export default function StarterHousehold() {
     return (
@@ -17,6 +18,8 @@ export default function StarterHousehold() {
         <header>
           <Navbar/>
         </header>
+
+        <StarterHouseholdForm/>
       </main>
       <Footer/>
       </>

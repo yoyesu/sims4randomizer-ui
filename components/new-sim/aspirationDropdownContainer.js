@@ -1,4 +1,4 @@
-import getAspirations from './dropdownApiHook'
+import getAspirations from '../dropdownApiHook'
 
 export default function AspirationDropdownContainer({age}) {
 
@@ -13,7 +13,7 @@ export default function AspirationDropdownContainer({age}) {
       {error && <Error message={error.message} />} */}
       
       <option value="-1">Random</option>
-      {data && data.map((asp, indx) => <option value={indx}>{asp}</option>)}
+      {data && data.map((asp, indx) => <option key={indx} value={indx}>{asp}</option>)}
 
       </>
       

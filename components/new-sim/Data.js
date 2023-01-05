@@ -18,7 +18,8 @@ export default function Data({data}) {
         {sims[0].ageGroup.id >= 4 && <p>Will get married (ever or again)?: {sims[0].willMarry}</p>}
         <p>Skills to max: {sims[0].skills.map((skill) => <li key={skill}>{skill}</li>)}</p>
         {sims[0].ageGroup.id >= 3 && <p>Sexual preference: {sims[0].sexualPreference}</p>}
-        {sims[0].ageGroup.id >= 3 && <p>Job: {sims[0].job}</p>}
+        {sims[0].ageGroup.id >= 3 && <p>Job: {sims[0].job.jobName}</p>}
+        {sims[0].ageGroup.id >= 3 && <p>Job Level: {sims[0].job.level}</p>}
 
         </div>
         

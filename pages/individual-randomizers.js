@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import AgeGenerator from '../components/individual-generators/age-generator'
 
 export default function IndividualRandomizers() {
     return (
@@ -17,6 +18,7 @@ export default function IndividualRandomizers() {
         <header>
           <Navbar/>
         </header>
+        <AgeGenerator/>
       </main>
       <Footer/>
       </>
