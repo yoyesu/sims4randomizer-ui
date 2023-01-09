@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
@@ -13,18 +12,23 @@ export default function Home() {
         <title>Sims 4 Randomizer</title>
         <meta name="description" content="Randomizer tool for the simulation game The Sims 4" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/plumbob.png" />
       </Head>
-      <main className={styles.main}>
-        <header>
+      
+      <header>
           <Navbar/>
         </header>
+      <main className="main-container">
+        <div className='banner'>
 
-        <h1>Sims 4 Randomizer</h1>
-        <p>Choose a generator!</p>
+          <h1>Sims 4 Randomizer</h1>
+          <p>Choose a generator!</p>
+
+        </div>
        
       </main>
       <Footer/>
+      
     </>
   )
 }

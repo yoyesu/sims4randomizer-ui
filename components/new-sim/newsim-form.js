@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ResultsContainer from "./resultsContainer";
-import styles from "../../styles/Home.module.css";
 import AspirationDropdownContainer from "./aspirationDropdownContainer";
 import getAspirations from "../dropdownApiHook";
 import JobDropdownContainer from "./jobDropdownContainer";
@@ -269,7 +268,7 @@ export default function NewSimForm() {
               </select>
             </label>
             <br/>
-              <small>Choose Toddler to select up to 5 skills, or Teen or older to select up to 25.</small>
+              <small className="text-muted">Choose Toddler to select up to 5 skills, or Teen or older to select up to 25.</small>
           </div>
 
         <input type="submit" value="Start" className="start-btn"></input>

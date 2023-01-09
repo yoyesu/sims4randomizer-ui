@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ResultsContainer from "./resultsContainer";
-import styles from "../../styles/Home.module.css";
 
 export default function StarterHouseholdForm() {
   //this is to store our inputs
@@ -28,24 +27,25 @@ export default function StarterHouseholdForm() {
   };
 
   return (
-    <div>
-      <form id="config-panel" action="#" method="post" onSubmit={handleSubmit}>
-        <div id="game-mode-config">
+    <div className="">
+      <form id="config-panel" action="#" method="post" onSubmit={handleSubmit} className="container">
+        <div className="row align-items-center">
+        <div id="game-mode-config" className="dropdown col col-md-3 offset-md-3">
           <label htmlFor="difficulty-game">
             Difficulty:
-            <select value={difficulty} onChange={handleDifficulty}>
-              <option value="0">Random</option>
-              <option value="1">Easy</option>
-              <option value="2">Normal</option>
-              <option value="3">Hard</option>
+            <select value={difficulty} onChange={handleDifficulty} class="form-select">
+              <option value="0" selected>Random</option>
+              <option value="1" >Easy</option>
+              <option value="2" >Normal</option>
+              <option value="3" >Hard</option>
             </select>
           </label>
         </div>
 
-        <div id="lifespan-config">
+        <div id="lifespan-config" className="dropdown col col-md-3">
           <label htmlFor="lifespan-sim">
             Lifespan:
-            <select value={lifespan} onChange={handleLifespan}>
+            <select value={lifespan} onChange={handleLifespan} class="form-select">
               <option value="-1">Random</option>
               <option value="0">Short</option>
               <option value="1">Normal</option>
@@ -53,11 +53,13 @@ export default function StarterHouseholdForm() {
             </select>
           </label>
         </div>
+        </div>
 
-        <div id="number-of-sims-config">
+      <div className="row align-items-center">
+        <div id="number-of-sims-config" className="dropdown col">
           <label htmlFor="number-of-sims-sim">
             Number of sims in the household:
-            <select value={numberOfSims} onChange={handleNumberOfSims}>
+            <select value={numberOfSims} onChange={handleNumberOfSims} class="form-select">
               <option value="-1">Random</option>
               {Array(8).fill(null).map((value, index) => (
             <option key={index} value={index + 1}>{index + 1}</option>
@@ -66,8 +68,16 @@ export default function StarterHouseholdForm() {
             </select>
           </label>
         </div>
-        <input type="submit" value="Start" className="start-btn"></input>
+        </div>
+        <div className="row align-items-center">
+            <div className="col">
+          <input type="submit" value="Randomize" className="btn btn-light"></input>
+          </div>
+        
+        </div>
+        
     </form>
+    
 
     {isShown && (
         <ResultsContainer

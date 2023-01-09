@@ -1,13 +1,12 @@
 export default function Navbar() {
     return (
-        <nav>
-        <ul>
-            <li ><a href="/">Home</a></li>
-            <li><a href="/starter-household">Starter</a></li>
-            <li><a href="/legacy-household">Legacy</a></li>
-            <li><a href="/new-sim">Sim</a></li>
-            <li><a href="/individual-randomizers">Individual Randomizers</a></li>
-        </ul>
+        <nav className="navbar sticky-top ">
+        <a href="/" className="navbar-brand">Home</a>
+            <a href="/starter-household" className="navbar-brand">Starter</a>
+            <a href="/legacy-household" className="navbar-brand">Legacy</a>
+            <a href="/new-sim" className="navbar-brand">Sim</a>
+            <a href="/individual-randomizers" className="navbar-brand">Individual Randomizers</a>
+        
     </nav>
     )
   }

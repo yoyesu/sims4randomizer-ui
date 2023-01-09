@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "url": "http://localhost:8090/enums/age",
+        "title": "Age Generator",
+        "slug": "1",
+        "btn": "Get age"
+    },
+    {
+        "id": 2,
+        "url": "http://localhost:8090/enums/gender",
+        "title": "Gender Generator",
+        "slug": "2",
+        "btn": "Get gender"
+    }
+]
