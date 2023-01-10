@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "randomizerName": "Normal Household Randomizer",
+        "description": "Looking to create a new family but don't know where to start? Completely randomize one here! Or choose difficulty level, type of lifespan and/or number of sims and let the randomizer do the rest.",
+        "href": "/starter-household",
+        "btnName": "Randomize household"
+    },
+    {
+        "id": 2,
+        "randomizerName": "Legacy Household Randomizer",
+        "description": "Randomize an heir and perhaps even other sims to help out... or amp up the challenge!",
+        "href": "/legacy-household",
+        "btnName": "Randomize household"
+    },
+    {
+        "id": 3,
+        "randomizerName": "Sim Randomizer",
+        "description": "Get a sim completely random or customize the options you prefer! From their age to the amount of skills they will have to try to drive to max level!",
+        "href": "/new-sim",
+        "btnName": "Randomize sim"
+    },
+    {
+        "id": 4,
+        "randomizerName": "All Randomizers",
+        "description": "Randomize everything individually! What job should your sim do? Should they marry? Should they break up? Let the odds decide!",
+        "href": "/individual-randomizers",
+        "btnName": "Go to randomizers"
+    }
+]

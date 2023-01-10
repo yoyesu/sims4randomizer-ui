@@ -1,6 +1,17 @@
 /*********** GENERAL***************/
+*{
+	border: 1px solid red;
+}
 .navbar{
 	padding: 1rem 2rem;
+}
+.navbar-logo-container{
+	width: 40px;
+	height: 40px;
+}
+
+.navbar-nav{
+	width:100%;
 }
 
 .main-container{
@@ -36,7 +47,16 @@ footer{
 
 .banner{
 	padding-top: 5rem;
-	font-size: 50px;
+}
+.desc-cards-container{
+	width: 90%;
+}
+.random-desc-card{
+	background-color: rgb(78, 95, 246);
+	width: 20%;
+	min-width: 300px;
+	min-height: 328px;
+	height: fit-content;
 }
 
 /*********** STARTER HOUSEHOLD ***************/
