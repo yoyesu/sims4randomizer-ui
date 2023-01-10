@@ -3,14 +3,60 @@
         "id": 1,
         "url": "http://localhost:8090/enums/age",
         "title": "Age Generator",
-        "slug": "1",
         "btn": "Get age"
     },
     {
         "id": 2,
         "url": "http://localhost:8090/enums/gender",
         "title": "Gender Generator",
-        "slug": "2",
         "btn": "Get gender"
+    },
+    {
+        "id": 3,
+        "url": "http://localhost:8090/enums/aspirations",
+        "title": "Aspiration Generator",
+        "btn": "Get aspiration"
+    },
+    {
+        "id": 4,
+        "url": "http://localhost:8090/enums/child-aspirations",
+        "title": "Child Aspiration Generator",
+        "btn": "Get aspiration"
+    },
+    {
+        "id": 5,
+        "url": "http://localhost:8090/enums/child-skills",
+        "title": "Child Skill Generator",
+        "btn": "Get skill"
+    },
+    {
+        "id": 6,
+        "url": "http://localhost:8090/enums/jobs",
+        "title": "Job Generator",
+        "btn": "Get job"
+    },
+    {
+        "id": 7,
+        "url": "http://localhost:8090/enums/teen-jobs",
+        "title": "Teen Job Generator",
+        "btn": "Get job"
+    },
+    {
+        "id": 8,
+        "url": "http://localhost:8090/enums/sexual-preference",
+        "title": "Sexuality Generator",
+        "btn": "Get sexuality"
+    },
+    {
+        "id": 9,
+        "url": "http://localhost:8090/enums/skills",
+        "title": "Skill Generator",
+        "btn": "Get skill"
+    },
+    {
+        "id": 10,
+        "url": "http://localhost:8090/enums/toddler-skills",
+        "title": "Toddler Skill Generator",
+        "btn": "Get skill"
     }
 ]

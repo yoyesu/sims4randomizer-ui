@@ -35,11 +35,10 @@ export default function IndividualRandomizers() {
         </header>
         <div className="container">
             <h1> All Generators </h1>
-            <Generator generator={Generators[0]}/>
-            <Generator generator={Generators[1]}/>
-
+            {Generators.map((gen) => <Generator generator={gen}/>)}
+            
             <div className="projects">
-            <div className="project" key="3">
+            <div className="project" key="11">
             <h2>Number of Sims</h2>
             {isRun && <p>{numberOfSims}</p>}
             <button onClick={handleResult}>Get number</button>

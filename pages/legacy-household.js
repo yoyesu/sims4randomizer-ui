@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import LegacyForm from '../components/legacy/legacy-form'
 
 export default function LegacyHousehold() {
     return (
@@ -11,10 +12,16 @@ export default function LegacyHousehold() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/plumbob.png" />
       </Head>
-      <main className="main-container">
-        <header>
+      <header>
           <Navbar/>
         </header>
+        <main className="container main-container">
+        
+
+        <h1>New Legacy Household Generator</h1>
+
+        <LegacyForm/>
+        
       </main>
       <Footer/>
       </>

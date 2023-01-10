@@ -6,7 +6,7 @@ import JobDropdownContainer from "./jobDropdownContainer";
 
 export default function NewSimForm() {
   //this is to store our inputs
-  const [difficulty, setDifficulty] = useState("0");
+  const [difficulty, setDifficulty] = useState("-1");
   const [lifespan, setLifespan] = useState("-1");
   const [isShown, setIsShown] = useState(false);
   const [age, setAge] = useState("-1");
@@ -90,10 +90,10 @@ export default function NewSimForm() {
           <label htmlFor="difficulty-game">
             Difficulty:
             <select value={difficulty} onChange={handleChange}>
-              <option value="0">Random</option>
-              <option value="1">Easy</option>
-              <option value="2">Normal</option>
-              <option value="3">Hard</option>
+              <option value="-1">Random</option>
+              <option value="0">Easy</option>
+              <option value="1">Normal</option>
+              <option value="2">Hard</option>
             </select>
           </label>
         </div>

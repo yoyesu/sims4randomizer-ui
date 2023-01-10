@@ -11,6 +11,9 @@
     min-width: 100%;
 	
 }
+.invisible{
+	display:none;
+}
 .col{
 	
 	padding: 1rem;

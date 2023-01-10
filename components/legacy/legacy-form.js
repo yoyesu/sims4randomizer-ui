@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ResultsContainer from "./resultsContainer";
 
-export default function StarterHouseholdForm() {
+export default function LegacyForm() {
   //this is to store our inputs
   const [difficulty, setDifficulty] = useState("-1");
   const [lifespan, setLifespan] = useState("-1");
