@@ -21,11 +21,12 @@ export default function Home() {
           <Navbar/>
         </header>
       <main className="main-container">
-        <div className='banner'>
+        <div className='banner d-flex align-items-center flex-column'>
 
-          <h1>Random Story Prompts <span id="h1-homepage">for The Sims 4</span></h1>
-          <small>For base game only at the moment</small>
-          <p>Choose a randomizer!</p>
+          <h1 className='fw-bold' id="h1-homepage">Random Story Prompts <br/>for The Sims 4</h1>
+          <small className='fst-italic'>For base game only at the moment</small>
+          <p className='cta-homepage'>Choose a randomizer!</p>
+          
           <div className='desc-cards-container d-flex justify-content-between flex-wrap'>
           {Randomizers.map((randomizer) => <RandomizerDescCard randomizer={randomizer}/>)}
           </div>

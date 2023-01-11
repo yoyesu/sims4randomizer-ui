@@ -16,10 +16,10 @@ export default function StarterHousehold() {
       <header>
           <Navbar/>
         </header>
-      <main className="main-container">
+      <main className="main-container d-flex align-items-center flex-column">
         
 
-        <h1>Starter Household Generator</h1>
+        <h1>Starter Household Randomizer</h1>
 
         <StarterHouseholdForm/>
       </main>

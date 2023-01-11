@@ -33,15 +33,17 @@ export default function IndividualRandomizers() {
         <header>
           <Navbar/>
         </header>
-        <div className="container">
+        <div className="d-flex align-items-center flex-column">
             <h1> All Generators </h1>
+            <div className='individual-randomizer-card-container d-flex justify-content-between flex-wrap'>
             {Generators.map((gen) => <Generator generator={gen}/>)}
             
-            <div className="projects">
-            <div className="project" key="11">
+            
+            <div className="individual-randomizer-card" key="11">
             <h2>Number of Sims</h2>
             {isRun && <p>{numberOfSims}</p>}
-            <button onClick={handleResult}>Get number</button>
+            <button className='btn ctas-individual-randomizers mt-auto' onClick={handleResult}>Get number</button>
+          
       </div>
     </div>
         </div>

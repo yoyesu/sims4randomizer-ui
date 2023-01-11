@@ -15,12 +15,12 @@ export default function Generator({generator}) {
   };
 
   return (
-    <div className="projects">
-      <div className="project" key={id}>
-        <h2>{title}</h2>
+    
+      <div className="individual-randomizer-card" key={id}>
+        <h3>{title}</h3>
         {isRun && <p>{values[valuesId].name}</p>}
-        <button onClick={handleResult}>{btn}</button>
+        <button className='btn ctas-individual-randomizers mt-auto' onClick={handleResult}>{btn}</button>
       </div>
-    </div>
+    
   );
 }

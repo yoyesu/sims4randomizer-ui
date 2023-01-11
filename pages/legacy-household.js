@@ -15,7 +15,7 @@ export default function LegacyHousehold() {
       <header>
           <Navbar/>
         </header>
-        <main className="container main-container">
+        <main className="main-container d-flex align-items-center flex-column">
         
 
         <h1>New Legacy Household Generator</h1>

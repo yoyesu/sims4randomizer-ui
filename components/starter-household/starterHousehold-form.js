@@ -27,7 +27,7 @@ export default function StarterHouseholdForm() {
   };
 
   return (
-    <div className="">
+    <div className="starter-household-component">
       <form id="config-panel" action="#" method="post" onSubmit={handleSubmit} className="container">
         <div className="row align-items-center">
         <div id="game-mode-config" className="dropdown col col-md-3 offset-md-3">

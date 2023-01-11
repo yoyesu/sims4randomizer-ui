@@ -84,12 +84,13 @@ export default function NewSimForm() {
   };
 
   return (
-    <div>
-      <form id="config-panel" action="#" method="post" onSubmit={handleSubmit}>
-        <div id="game-mode-config">
+    <div className="starter-household-component">
+      <form id="config-panel" action="#" method="post" onSubmit={handleSubmit} className="container">
+        <div className="row">
+        <div id="game-mode-config" className="dropdown col">
           <label htmlFor="difficulty-game">
             Difficulty:
-            <select value={difficulty} onChange={handleChange}>
+            <select value={difficulty} onChange={handleChange} className="form-select">
               <option value="-1">Random</option>
               <option value="0">Easy</option>
               <option value="1">Normal</option>
@@ -97,11 +98,12 @@ export default function NewSimForm() {
             </select>
           </label>
         </div>
+        
 
-        <div id="lifespan-config">
+        <div id="lifespan-config" className="dropdown col">
           <label htmlFor="lifespan-sim">
             Lifespan:
-            <select value={lifespan} onChange={handleLifespan}>
+            <select value={lifespan} onChange={handleLifespan} className="form-select">
               <option value="-1">Random</option>
               <option value="0">Short</option>
               <option value="1">Normal</option>
@@ -110,10 +112,10 @@ export default function NewSimForm() {
           </label>
         </div>
 
-        <div id="age-config">
+        <div id="age-config" className="dropdown col">
           <label htmlFor="age-sim">
             Age:
-            <select value={age} onChange={handleAge}>
+            <select value={age} onChange={handleAge} className="form-select">
               <option value="-1">Random</option>
               <option value="0">Toddler</option>
               <option value="1">Child</option>
@@ -124,11 +126,14 @@ export default function NewSimForm() {
             </select>
           </label>
         </div>
-
-        <div id="gender-config">
+        </div>
+        
+        {/* START OF SECOND ROW */}
+        <div className="row">
+        <div id="gender-config" className="dropdown col">
           <label htmlFor="gender-sim">
             Gender:
-            <select value={gender} onChange={handleGender}>
+            <select value={gender} onChange={handleGender} className="form-select">
               <option value="-1">Random</option>
               <option value="0">Male</option>
               <option value="1">Female</option>
@@ -137,10 +142,10 @@ export default function NewSimForm() {
         </div>
 
         {age >= 3 && (
-          <div id="aspiration-config">
+          <div id="aspiration-config" className="dropdown col">
             <label htmlFor="aspiration-sim">
               Aspiration:
-              <select value={aspiration} onChange={handleAspiration}>
+              <select value={aspiration} onChange={handleAspiration} className="form-select">
                 <AspirationDropdownContainer age={age} />
               </select>
             </label>
@@ -148,10 +153,10 @@ export default function NewSimForm() {
         )}
 
         {age < 3 && age > 0 && (
-          <div id="child-aspiration-config">
+          <div id="child-aspiration-config" className="dropdown col">
             <label htmlFor="child-aspiration-sim">
               Aspiration:
-              <select value={aspiration} onChange={handleAspiration}>
+              <select value={aspiration} onChange={handleAspiration} className="form-select">
                 <AspirationDropdownContainer age={age}/>
               </select>
             </label>
@@ -159,20 +164,36 @@ export default function NewSimForm() {
         )}
 
         {age >= 3 && (
-          <div id="job-config">
+          <div id="job-config" className="dropdown col">
             <label htmlFor="job-sim">
               Job:
-              <select value={job} onChange={handleJob}>
+              <select value={job} onChange={handleJob} className="form-select">
                 <JobDropdownContainer age={age} />
               </select>
             </label>
           </div>
         )}
+
+        {age == 2 && (
+                  <div id="teen-job-config" className="dropdown col">
+                    <label htmlFor="teen-job-sim">
+                      Job:
+                      <select value={job} onChange={handleJob} className="form-select">
+                        <JobDropdownContainer age={age}/>
+                      </select>
+                    </label>
+                  </div>
+                )}
+        </div>
+
+        {/* START OF THIRD ROW */}
+
+        <div className="row">
         {age >= 3 && (
-          <div id="job-level-config">
+          <div id="job-level-config" className="dropdown col">
             <label htmlFor="job-level-sim">
-              Job:
-              <select value={jobLevel} onChange={handleJobLevel}>
+              Job level:
+              <select value={jobLevel} onChange={handleJobLevel} className="form-select">
               <option value="-1">Random</option>
               {Array(10).fill(null).map((value, index) => (
             <option key={index} value={index+1}>{index+1}</option>
@@ -182,22 +203,11 @@ export default function NewSimForm() {
           </div>
         )}
 
-        {age == 2 && (
-          <div id="teen-job-config">
-            <label htmlFor="teen-job-sim">
-              Job:
-              <select value={job} onChange={handleJob}>
-                <JobDropdownContainer age={age}/>
-              </select>
-            </label>
-          </div>
-        )}
-
         {age >= 3 && (
-          <div id="children-config">
+          <div id="children-config" className="dropdown col">
             <label htmlFor="children">
               Children to have:
-              <select value={children} onChange={handleChildren}>
+              <select value={children} onChange={handleChildren} className="form-select">
                 <option value="-1">Random</option>
               {Array(8).fill(null).map((value, index) => (
             <option key={index} value={index}>{index}</option>
@@ -206,12 +216,12 @@ export default function NewSimForm() {
             </label>
           </div>
         )}
-
+      
         {age >= 3 && (
-          <div id="marital-status-config">
+          <div id="marital-status-config" className="dropdown col">
             <label htmlFor="marital-status">
               Already married?:
-              <select value={married} onChange={handleMarried}>
+              <select value={married} onChange={handleMarried} className="form-select">
                 <option value="-1">Random</option>
                 <option value="0">Yes</option>
                 <option value="1">No</option>
@@ -220,11 +230,15 @@ export default function NewSimForm() {
           </div>
         )}
 
+</div>
+
+          {/* START OF FOURTH ROW */}
+          <div className="row">
         {age >= 3 && (
-          <div id="wedding-config">
+          <div id="wedding-config" className="dropdown col">
             <label htmlFor="wedding">
               Will marry? (ever or again):
-              <select value={wedding} onChange={handleWedding}>
+              <select value={wedding} onChange={handleWedding} className="form-select">
                 <option value="-1">Random</option>
                 <option value="0">Yes</option>
                 <option value="1">No</option>
@@ -234,10 +248,10 @@ export default function NewSimForm() {
         )}
 
         {age >= 2 && (
-          <div id="sexuality-config">
+          <div id="sexuality-config" className="dropdown col">
             <label htmlFor="sexuality">
               Sexuality:
-              <select value={sexuality} onChange={handleSexuality}>
+              <select value={sexuality} onChange={handleSexuality} className="form-select">
                 <option value="-1">Random</option>
                 <option value="0">Straight</option>
                 <option value="1">Gay</option>
@@ -247,10 +261,10 @@ export default function NewSimForm() {
           </div>
         )}
 
-          <div id="max-number-skills-config">
+          <div id="max-number-skills-config" className="dropdown col">
             <label htmlFor="max-number-skills">
               How many skills should they max?:
-              <select value={maxNumberOfSkills} onChange={handleMaxNumberOfSkills}>
+              <select value={maxNumberOfSkills} onChange={handleMaxNumberOfSkills} className="form-select">
               <option value="-1">Random</option>
               {age == -1 && Array(4).fill(null).map((value, index) => (
             <option key={index} value={index+1}>{index+1}</option>
@@ -270,8 +284,12 @@ export default function NewSimForm() {
             <br/>
               <small className="text-muted">Choose Toddler to select up to 5 skills, or Teen or older to select up to 25.</small>
           </div>
-
-        <input type="submit" value="Start" className="start-btn"></input>
+          </div>
+          <div className="row align-items-center">
+            <div className="col">
+          <input type="submit" value="Randomize" className="btn btn-light"></input>
+          </div>
+          </div>
       </form>
       {isShown && (
         <ResultsContainer

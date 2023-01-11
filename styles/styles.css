@@ -1,9 +1,19 @@
+:root{
+	--blue: #35C6EB;
+	--greenish-blue: #2594a4;
+	--pink: #eb35ad;
+	--fucsia: #a42579;
+	--yellow: #ebcc35;
+	--red-accents:rgb(255,0,0);
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
 /*********** GENERAL***************/
 *{
-	border: 1px solid red;
+	border: 1px solid rgb(255, 0, 0);
 }
 .navbar{
 	padding: 1rem 2rem;
+	box-shadow: 0 5px 5px var(--greenish-blue);
 }
 .navbar-logo-container{
 	width: 40px;
@@ -15,7 +25,7 @@
 }
 
 .main-container{
-	background-color: black;
+	background-color: var(--blue);
 	color: white;
 	text-align: center;
 	min-height: 100vh;
@@ -32,6 +42,18 @@
 
 h1{
 	padding: 2rem 1rem;
+	font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  text-shadow: -15px 5px 20px #ced0d3;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 0px var(--yellow), 
+    5px 5px 0px var(--pink), 
+    7px 7px 0px var(--fucsia), 
+    9px 9px 0px var(--greenish-blue), 
+    11px 11px 0px #6868AC, 
+    13px 13px 0px #90B1E0;
 }
 
 nav, footer{
@@ -41,42 +63,90 @@ nav, footer{
 
 footer{
 	min-height:50px;
+	box-shadow: 5px 0 5px var(--greenish-blue);
+}
+
+.btn{
+	margin: 1rem 2rem 2rem 2rem;
+	background-color: var(--yellow);
+	border: 0.5px solid white;
+}
+
+.btn:hover{
+	background-color: var(--fucsia);
 }
 
 /*********** HOMEPAGE ***************/
 
 .banner{
-	padding-top: 5rem;
+	padding-top: 3rem;
 }
 .desc-cards-container{
 	width: 90%;
 }
 .random-desc-card{
-	background-color: rgb(78, 95, 246);
+	background-color: var(--greenish-blue);
 	width: 20%;
 	min-width: 300px;
-	min-height: 328px;
+	min-height: 360px;
 	height: fit-content;
+	padding: 1rem;
+	margin-bottom: 2.5rem;
+	box-shadow: var(--greenish-blue) 0px 13px 27px -5px, var(--greenish-blue) 0px 8px 16px -8px;
 }
 
+.random-desc-card > h3{
+	text-transform: uppercase;
+	text-shadow: 1px 0px 6px var(--red-accents);
+	margin-bottom: 1rem;
+}
+
+.cta-homepage{
+	font-size: 2rem;
+	text-shadow: 5px 5px 20px var(--greenish-blue);
+}
+
+#h1-homepage{
+	padding-top: 0;
+}
+
+
 /*********** STARTER HOUSEHOLD ***************/
+
+.starter-household-component{
+	width: 70%;
+	background-color: var(--greenish-blue);
+	box-shadow: var(--greenish-blue) 0px 13px 27px -5px, var(--greenish-blue) 0px 8px 16px -8px;
+}
 
 /*********** NEW SIM ***************/
 
 /*********** INDIVIDUAL RANDOMIZERS ***************/
-
-
-/*********** FORMS ***************/
-
-form{
-	/* display: flex;
-	justify-content: center;
-	align-content: flex-start;
-	gap: 1rem; */
+.individual-randomizer-card-container{
+	width: 90%;
+	gap:1rem;
+}
+.individual-randomizer-card{
+	background-color: var(--greenish-blue);
+	width: 20%;
+	min-width: 200px;
+	min-height: 245px;
+	height: fit-content;
+	padding: 1rem;
+	margin-bottom: 2.5rem;
+	box-shadow: var(--greenish-blue) 0px 13px 27px -5px, var(--greenish-blue) 0px 8px 16px -8px;
 }
 
-.btn{
-	margin: 1rem 2rem 2rem 2rem;
+.individual-randomizer-card > h3{
+	text-transform: uppercase;
+	text-shadow: 1px 0px 6px var(--red-accents);
+	margin-bottom: 1rem;
 }
+
+.ctas-individual-randomizers{
+	text-shadow: 5px 5px 20px var(--greenish-blue);
+}
+
+
   
   
