@@ -1,6 +1,7 @@
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-sm sticky-top">
+    <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      {/* <div class="container-fluid"> */}
       <a href="/" className="navbar-brand">
         <div className="navbar-logo-container">
           <img
@@ -12,25 +13,26 @@ export default function Navbar() {
         </div>
       </a>
 
-        {/* this is the hamburger button for small screens */}
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-        </button>
+    {/* hamburger button for small screens */}
+         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarResponsive" 
+      aria-expanded="false" aria-label="Toggle navigation">
+         <span className="navbar-toggler-icon"></span>
+         </button>
 
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <div className="navbar-nav d-flex justify-content-around">
-            <a href="/" className="nav-link nav-item">Home</a>
+       <div className="collapse navbar-collapse" id="navbarNav">
+         <div className="navbar-nav">
+             <a href="/" className="nav-item nav-link">Home</a>
           
-            <a href="/starter-household" className="nav-link nav-item">Starter</a>
+             <a href="/starter-household" className="nav-item nav-link">Starter</a>
 
-            <a href="/legacy-household" className="nav-link nav-item">Legacy</a>
+             <a href="/legacy-household" className="nav-item nav-link">Legacy</a>
 
-            <a href="/new-sim" className="nav-link nav-item">Sim</a>
+             <a href="/new-sim" className="nav-item nav-link">Sim</a>
 
-            <a href="/individual-randomizers" className="nav-link nav-item">Individual Randomizers</a>
-
-        </div>
-      </div>
-    </nav>
+             <a href="/individual-randomizers" className="nav-item nav-link">Individual Randomizers</a>
+         </div>
+       </div>
+       {/* </div> */}
+     </nav>
   );
 }

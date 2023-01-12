@@ -5,7 +5,7 @@ export default function RandomizerDescCard({randomizer}) {
         <div className="random-desc-card d-flex flex-column" key={id}>
             <h3>{randomizerName}</h3>
             <p className="">{description}</p>
-            <a class="btn mt-auto" href={href}>{btnName}</a>
+            <a className="btn mt-auto" href={href}>{btnName}</a>
         </div>
     )
   }

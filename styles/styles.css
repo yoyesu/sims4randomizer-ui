@@ -7,8 +7,9 @@
 	--red-accents:rgb(255,0,0);
 }
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
 /*********** GENERAL***************/
-*{
+* {
 	/* border: 1px solid rgb(255, 0, 0); */
 }
 .navbar{
@@ -30,13 +31,11 @@
 	text-align: center;
 	min-height: 100vh;
     min-width: 100%;
-	
 }
 .invisible{
 	display:none;
 }
 .col{
-	
 	padding: 1rem;
 }
 
