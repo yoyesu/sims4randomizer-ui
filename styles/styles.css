@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
 /*********** GENERAL***************/
 *{
-	border: 1px solid rgb(255, 0, 0);
+	/* border: 1px solid rgb(255, 0, 0); */
 }
 .navbar{
 	padding: 1rem 2rem;
@@ -117,6 +117,21 @@ footer{
 	width: 70%;
 	background-color: var(--greenish-blue);
 	box-shadow: var(--greenish-blue) 0px 13px 27px -5px, var(--greenish-blue) 0px 8px 16px -8px;
+	margin-bottom: 2rem;
+	min-width: 300px;
+	border-radius: 3%;
+	padding-top: 2rem;
+}
+
+.sim-card{
+	background-color: var(--yellow);
+	width: 300px;
+	height: 300px;
+	padding: 1rem;
+	margin-bottom: 2.5rem;
+	box-shadow: var(--greenish-blue) 0px 13px 27px -5px, var(--greenish-blue) 0px 8px 16px -8px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 20px var(--fucsia);
 }
 
 /*********** NEW SIM ***************/
@@ -151,5 +166,52 @@ footer{
 	color: var(--yellow);
 }
 
-  
-  
+.scrollbar-young-passion::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-young-passion::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.scrollbar-young-passion::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffecd2), to(#fcb69f));
+    background-image: -webkit-linear-gradient(left, #ffecd2 0%, #fcb69f 100%);
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+.randomized-results{
+	font-weight: 700;
+	color: black;
+}
+
+.results-container-item{
+	background-color: var(--yellow);
+	padding: 0.5rem;
+	color: white;
+	margin: 2rem;
+	border-radius: 6%;
+	box-shadow: 3px 3px 20px var(--fucsia);
+}
+
+#non-lifespan-difficulty-results-container{
+	width: 50%;
+}
+
+#new-sim-lifespan-difficulty-results-container{
+	height: fit-content;
+	padding: 1rem 1rem 0.5rem 1rem;
+}
+
+#lifespan-difficulty-results-container, #summary-results-container{
+	height: fit-content;
+	width: fit-content;
+	margin-bottom: 2rem;
+	padding: 1rem 1rem 0.5rem 1rem;
+}

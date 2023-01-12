@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
-import StarterHouseholdForm from '../components/starter-household/starterHousehold-form'
+import StarterHouseholdForm from '../components/starter-legacy/starterHousehold-form'
 
 export default function StarterHousehold() {
     return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ResultsContainer from "./resultsContainer";
 import AspirationDropdownContainer from "./aspirationDropdownContainer";
-import getAspirations from "../dropdownApiHook";
+import getAspirations from "./dropdownApiHook";
 import JobDropdownContainer from "./jobDropdownContainer";
 
 export default function NewSimForm() {

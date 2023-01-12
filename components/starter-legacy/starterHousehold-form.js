@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ResultsContainer from "./resultsContainer";
+import LegacyAndStarterResultsContainer from "./LegacyAndStarterResultsContainer";
 
 export default function StarterHouseholdForm() {
   //this is to store our inputs
@@ -7,11 +7,21 @@ export default function StarterHouseholdForm() {
   const [lifespan, setLifespan] = useState("-1");
   const [isShown, setIsShown] = useState(false);
   const [numberOfSims, setNumberOfSims] = useState("-1");
+  const [showRestart,setShowRestart] = useState(false);
+  
   function handleSubmit(e) {
     e.preventDefault();
     setIsShown(true);
+    setShowRestart(true);
     document.getElementById("config-panel").classList.add("invisible");
-  }
+  };
+
+  function handleRestart(e) {
+    e.preventDefault();
+    setIsShown(false);
+    setShowRestart(false);
+    document.getElementById("config-panel").classList.remove("invisible");
+  };
   const handleDifficulty = (event) => {
     event.preventDefault();
     setDifficulty(event.target.value);
@@ -71,7 +81,8 @@ export default function StarterHouseholdForm() {
         </div>
         <div className="row align-items-center">
             <div className="col">
-          <input type="submit" value="Randomize" className="btn btn-light"></input>
+          {!showRestart && <input type="submit" value="Randomize" className="btn btn-light"></input>}
+          
           </div>
         
         </div>
@@ -80,12 +91,15 @@ export default function StarterHouseholdForm() {
     
 
     {isShown && (
-        <ResultsContainer
+        <LegacyAndStarterResultsContainer
           difficulty={difficulty}
           lifespan={lifespan}
           numberOfSims={numberOfSims}
+          isLegacy={false}
         />
       )}
+
+{showRestart && <input type="submit" value="Restart" className="btn btn-light" onClick={handleRestart}></input>}
     </div>
   );
 }

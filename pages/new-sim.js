@@ -20,7 +20,7 @@ export default function NewSim() {
       <main className="main-container d-flex align-items-center flex-column">
         
 
-        <h1>New Sim Generator</h1>
+        <h1>New Sim Randomizer</h1>
 
         <NewSimForm/>
         

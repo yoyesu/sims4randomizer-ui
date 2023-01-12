@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
-import LegacyForm from '../components/legacy/legacy-form'
+import LegacyForm from '../components/starter-legacy/legacy-form'
 
 export default function LegacyHousehold() {
     return (

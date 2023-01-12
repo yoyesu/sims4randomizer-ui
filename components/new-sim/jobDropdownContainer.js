@@ -1,4 +1,4 @@
-import getAspirations, { getJobs } from '../dropdownApiHook'
+import getAspirations, { getJobs } from './dropdownApiHook'
 
 export default function JobDropdownContainer({age}) {
 
@@ -13,7 +13,7 @@ export default function JobDropdownContainer({age}) {
       {error && <Error message={error.message} />} */}
       
       <option value="-1">Random</option>
-      {data && data.map((asp, indx) => <option key={indx} value={indx}>{asp.jobName}</option>)}
+      {data && data.map((asp, indx) => <option key={indx} value={indx}>{asp.name}</option>)}
 
       </>
       
