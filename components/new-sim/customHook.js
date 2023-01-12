@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function useFetch(url, difficultyy,lifespanChoice,ageGroup,simGender,simAspiration,simJob,childrenToHave,married,wedding,simSexuality,levelOfJob,maxNumberOfSkills) {
-    let levelOfDifficulty = Object.values(difficultyy);
+    // let levelOfDifficulty = Object.values(difficultyy);
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const [difficulty, setDifficulty] = useState(levelOfDifficulty[0]);
+    const [difficulty, setDifficulty] = useState(difficultyy);
     const [lifespan, setLifeSpan] = useState(lifespanChoice);
     const [age, setAge] = useState(ageGroup);
     const [gender, setGender] = useState(simGender);

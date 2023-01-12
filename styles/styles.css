@@ -147,6 +147,9 @@ footer{
 	text-shadow: 5px 5px 20px var(--greenish-blue);
 }
 
+.color-change-to-yellow{
+	color: var(--yellow);
+}
 
   
   
