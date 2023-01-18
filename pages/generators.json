@@ -13,19 +13,19 @@
     },
     {
         "id": 3,
-        "url": "http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/aspirations",
+        "url": "http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/enums/aspirations",
         "title": "Aspiration Generator",
         "btn": "Get aspiration"
     },
     {
         "id": 4,
-        "url": "http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/child-aspirations",
+        "url": "http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/enums/child-aspirations",
         "title": "Child Aspiration Generator",
         "btn": "Get aspiration"
     },
     {
         "id": 5,
-        "url": "http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/child-skills",
+        "url": "http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/enums/child-skills",
         "title": "Child Skill Generator",
         "btn": "Get skill"
     },
