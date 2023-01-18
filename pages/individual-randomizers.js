@@ -3,10 +3,8 @@ import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import { useRouter } from "next/router";
 import Generators  from './generators.json'
-import Link from 'next/link'
 
 import Generator from '../components/individual-generators/generator'
-import { useState } from 'react';
 
 export default function IndividualRandomizers() {
   const router = useRouter();

@@ -2,7 +2,7 @@ import getAspirations, { getJobs } from './dropdownApiHook'
 
 export default function JobDropdownContainer({age}) {
 
-    let url = age == 2 ? 'http://localhost:8090/enums/teen-jobs' : 'http://localhost:8090/enums/jobs';
+    let url = age == 2 ? 'http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/enums/teen-jobs' : 'http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/enums/jobs';
     
   
     const { data, loadingState, error } = getJobs(url);

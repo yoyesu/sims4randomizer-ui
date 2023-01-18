@@ -2,7 +2,7 @@ import getAspirations from './dropdownApiHook'
 
 export default function AspirationDropdownContainer({age}) {
 
-    let url = age == 1 ? 'http://localhost:8090/enums/child-aspirations' : 'http://localhost:8090/enums/aspirations';
+    let url = age == 1 ? 'http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/enums/child-aspirations' : 'http://sims4randomizer-env.eba-a2nzq8i3.eu-west-2.elasticbeanstalk.com/enums/aspirations';
     
     console.log("aspiration container has been called")
     const { data, loadingState, error } = getAspirations(url);
