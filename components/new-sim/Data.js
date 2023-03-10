@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Data({data}) {
 
-  const {difficulty, household: {lifeSpan}, sims} = data;
+  const {difficulty, household: {lifeSpan, sims}} = data;
   const convertSkillsArrayToString = () => {
     let newArray = [];
-    sims[0].skills.map((skill) => {
+    sims[0].skillsToMaster.map((skill) => {
       newArray.push(skill.name);
     });
       return newArray.join(", ");

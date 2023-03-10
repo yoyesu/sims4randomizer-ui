@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function LegacyData({data}) {
 
-  const {difficulty, household: {lifeSpan}, sims} = data;
+  const {difficulty, household: {lifeSpan, sims}} = data;
   const convertSkillsArrayToString = (index) => {
     let newArray = [];
-    sims[index].skills.map((skill) => {
+    sims[index].skillsToMaster.map((skill) => {
       newArray.push(skill.name);
     });
       return newArray.join(", ");
@@ -35,7 +35,7 @@ export default function LegacyData({data}) {
       {sim.ageGroup.id >= 4 && <p>Children to have: <span className='randomized-results'>{sim.children}</span></p>}
       {sim.ageGroup.id >= 4 && <p>Is married?: <span className='randomized-results'>{sim.isMarried}</span></p>}
       {sim.ageGroup.id >= 4 && <p>Will get married (ever or again)?: <span className='randomized-results'>{sim.willMarry}</span></p>}
-      <p>Skills to master ({sim.skills.length}): <span className='randomized-results'>{convertSkillsArrayToString(index)}</span></p>
+      <p>Skills to master ({sim.skillsToMaster.length}): <span className='randomized-results'>{convertSkillsArrayToString(index)}</span></p>
       {sim.ageGroup.id >= 3 && <p>Sexual preference: <span className='randomized-results'>{sim.sexualPreference.name}</span></p>}
       {sim.ageGroup.id >= 3 && <p>Job: <span className='randomized-results'>{sim.job.name} ({sim.job.level})</span></p>}
       
